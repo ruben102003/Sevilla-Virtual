@@ -4,13 +4,15 @@ import './Header.css';
 
 function Header() {
   return (
-    <header>
+    <header className="header">
       <div className="logo">
-        <img src="/logo.png" alt="Sevilla Virtual" />
+        <Link to="/" className="logo-link">
+          <img src="/logo.png" alt="Sevilla Virtual" />
+          <span className="site-title">Sevilla Virtual: Descubre y Disfruta</span>
+        </Link>
       </div>
-      <nav>
+      <nav className="navigation">
         <ul>
-          <li><Link to="/">Inicio</Link></li>
           <li><Link to="/quienes-somos">Quienes Somos</Link></li>
           <li><Link to="/novedades">Novedades</Link></li>
           <li><Link to="/alojamiento">Alojamiento</Link></li>
