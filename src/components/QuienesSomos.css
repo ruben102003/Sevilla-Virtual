@@ -1,19 +1,21 @@
 .quienes-somos {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-image: url('/sevilla-background.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    min-height: calc(100vh - 140px); /* Ajusta según la altura del header y footer */
   }
   
   .section {
-    flex: 1;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.9); /* Color de fondo con transparencia para que el texto sea legible */
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
+  
   
   .section h2 {
     font-size: 1.5em;

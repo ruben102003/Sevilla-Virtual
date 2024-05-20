@@ -7,19 +7,22 @@ import QuienesSomos from './components/QuienesSomos';
 import Novedades from './components/Novedades';
 import Alojamiento from './components/Alojamiento';
 import Login from './components/Login';
+import './App.css';
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div id="root">
         <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/quienes-somos" element={<QuienesSomos />} />
-          <Route path="/novedades" element={<Novedades />} />
-          <Route path="/alojamiento" element={<Alojamiento />} />
-          <Route path="/login" element={<Login />} />
-        </Routes>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/quienes-somos" element={<QuienesSomos />} />
+            <Route path="/novedades" element={<Novedades />} />
+            <Route path="/alojamiento" element={<Alojamiento />} />
+            <Route path="/login" element={<Login />} />
+          </Routes>
+        </main>
         <Footer />
       </div>
     </Router>

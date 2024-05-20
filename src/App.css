@@ -1,28 +1,19 @@
-header {
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.logo img {
-  height: 50px;
+main {
+  flex: 1;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.login a {
-  color: #fff;
-  text-decoration: none;
+/* Opcional: Ajustes para el contenido principal */
+main > * {
+  padding: 20px;
 }
