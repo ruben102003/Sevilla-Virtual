@@ -1,0 +1,16 @@
+.actividad-detalle {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .actividad-detalle img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  .actividad-detalle p {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  

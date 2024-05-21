@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './Novedades.css';
+import { useParams } from 'react-router-dom';
+import './ActividadDetalle.css';
 
 const actividades = [
   { id: 1, titulo: 'Actividad 1', descripcion: 'Descripción de la Actividad 1', imagen: '/path/to/image1.jpg' },
@@ -17,19 +17,21 @@ const actividades = [
   { id: 12, titulo: 'Actividad 12', descripcion: 'Descripción de la Actividad 12', imagen: '/path/to/image12.jpg' },
 ];
 
-function Novedades() {
+function ActividadDetalle() {
+  const { id } = useParams();
+  const actividad = actividades.find(act => act.id === parseInt(id));
+
+  if (!actividad) {
+    return <div>Actividad no encontrada</div>;
+  }
+
   return (
-    <div className="novedades">
-      {actividades.map(actividad => (
-        <div key={actividad.id} className="actividad">
-          <img src={actividad.imagen} alt={actividad.titulo} />
-          <h3>
-            <Link to={`/actividad/${actividad.id}`}>{actividad.titulo}</Link>
-          </h3>
-        </div>
-      ))}
+    <div className="actividad-detalle">
+      <h1>{actividad.titulo}</h1>
+      <img src={actividad.imagen} alt={actividad.titulo} />
+      <p>{actividad.descripcion}</p>
     </div>
   );
 }
 
-export default Novedades;
+export default ActividadDetalle;

@@ -7,7 +7,7 @@ function Header() {
     <header className="header">
       <div className="logo">
         <Link to="/" className="logo-link">
-          <img src="/logo sevilla.png" alt="Sevilla Virtual" />
+          <img src="/SevillaVirtual.png" alt="Sevilla Virtual" />
           <span className="site-title">Sevilla Virtual: Descubre y Disfruta</span>
         </Link>
       </div>

@@ -15,5 +15,5 @@ main {
 
 /* Opcional: Ajustes para el contenido principal */
 main > * {
-  padding: 20px;
+  padding: 0px;
 }
