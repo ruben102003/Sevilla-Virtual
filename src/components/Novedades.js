@@ -4,17 +4,17 @@ import './Novedades.css';
 
 const actividades = [
   { id: 1, titulo: 'La Catedral de Sevilla y la Giralda', imagen: 'catedral-sevilla-giralda.jpg' },
-  { id: 2, titulo: 'El Alcázar de Sevilla', imagen: 'catedral-sevilla-giralda.jpg' },
-  { id: 3, titulo: 'Torre del Oro', imagen: '/path/to/image3.jpg' },
-  { id: 4, titulo: 'Casa de Pilatos', imagen: '/path/to/image4.jpg' },
-  { id: 5, titulo: 'Archivo de Indias', imagen: '/path/to/image5.jpg' },
-  { id: 6, titulo: 'Huevo de Colón de Sevilla', imagen: '/path/to/image6.jpg' },
-  { id: 7, titulo: 'Palacio de las Dueñas', imagen: '/path/to/image7.jpg' },
-  { id: 8, titulo: 'Monasterio de San Isidro del Campo', imagen: '/path/to/image8.jpg' },
-  { id: 9, titulo: 'Ruinas románicas de Itálica', imagen: '/path/to/image9.jpg' },
-  { id: 10, titulo: 'Las Setas de Sevilla', imagen: '/path/to/image10.jpg' },
-  { id: 11, titulo: 'Monasterio de la Cartuja', imagen: '/path/to/image11.jpg' },
-  { id: 12, titulo: 'Palacio de la Condesa de Lebrija', imagen: '/path/to/image12.jpg' },
+  { id: 2, titulo: 'El Alcázar de Sevilla', imagen: 'alcazar-de-sevilla.jpg' },
+  { id: 3, titulo: 'Torre del Oro', imagen: 'sevilla-torre-del-oro.jpg' },
+  { id: 4, titulo: 'Casa de Pilatos', imagen: 'casa-de-pilatos.jpg' },
+  { id: 5, titulo: 'Archivo de Indias', imagen: 'archivo-de-indias.jpg' },
+  { id: 6, titulo: 'Huevo de Colón de Sevilla', imagen: 'huevo-colón.jpg' },
+  { id: 7, titulo: 'Palacio de las Dueñas', imagen: 'salon-de-la-gitana-en-el-palacio-de-las-duenas.jpg' },
+  { id: 8, titulo: 'Monasterio de San Isidro del Campo', imagen: 'monasterio-san-isidoro-del-campo.jpg' },
+  { id: 9, titulo: 'Ruinas románicas de Itálica', imagen: 'ruinas-románicas-de-italia.jpg' },
+  { id: 10, titulo: 'Las Setas de Sevilla', imagen: 'sevilla-setas.jpg' },
+  { id: 11, titulo: 'Monasterio de la Cartuja', imagen: 'monasterio-cartuja-sevilla.jpg' },
+  { id: 12, titulo: 'Palacio de la Condesa de Lebrija', imagen: 'patio-del-palacio-de-la-condesa-lebrija.jpg' },
 ];
 
 function Novedades() {
