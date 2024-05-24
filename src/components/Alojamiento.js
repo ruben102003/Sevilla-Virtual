@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import './Alojamiento.css';
 
 function Alojamiento() {
   useEffect(() => {

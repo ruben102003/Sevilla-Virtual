@@ -13,7 +13,7 @@ body, main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white; /* Color del texto para contrastar con la imagen de fondo */
+    color: #333; /* Color del texto para contrastar con la imagen de fondo */
   }
   
   .hero h1 {

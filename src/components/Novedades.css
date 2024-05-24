@@ -1,20 +1,58 @@
 .novedades {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
     gap: 20px;
     padding: 20px;
+    background-image: url('/src/components/img/novedades.jpeg'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
   }
   
   .actividad {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s;
+    width: 400px; /* Ajusta el ancho de las cartas */
+    margin: auto; /* Centra las cartas dentro de cada columna */
+  }
+  
+  .actividad:hover {
+    transform: translateY(-10px);
   }
   
   .actividad img {
     width: 100%;
-    height: auto;
+    height: 280px; /* Ajusta la altura de las imágenes */
+    object-fit: cover;
   }
   
   .actividad h3 {
-    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .actividad h3 a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .actividad p {
+    padding: 10px;
+    color: #666;
   }
   

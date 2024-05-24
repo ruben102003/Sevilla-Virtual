@@ -1,4 +1,4 @@
-.login-container {
+.register-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,7 +6,7 @@
     background-color: #f4f4f4;
   }
   
-  .login-form {
+  .register-form {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -16,37 +16,32 @@
     flex-direction: column;
   }
   
-  .login-form h2 {
+  .register-form h2 {
     margin-bottom: 20px;
   }
   
-  .login-form label {
+  .register-form label {
     margin-bottom: 5px;
   }
   
-  .login-form input {
+  .register-form input {
     margin-bottom: 10px;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
   }
   
-  .login-buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .login-buttons button, .login-buttons a {
+  .register-form button {
     padding: 10px;
     text-decoration: none;
     background-color: #333;
     color: white;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
   }
   
-  .login-buttons button:hover, .login-buttons a:hover {
+  .register-form button:hover {
     background-color: #555;
   }
   

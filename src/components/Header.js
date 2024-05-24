@@ -1,8 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Header.css';
 
 function Header() {
+  const navigate = useNavigate();
+  const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+
+  const handleLogout = () => {
+    localStorage.removeItem('currentUser');
+    navigate('/login');
+  };
+
   return (
     <header className="header">
       <div className="logo">
@@ -19,7 +27,14 @@ function Header() {
         </ul>
       </nav>
       <div className="login">
-        <Link to="/login">Iniciar Sesión</Link>
+        {currentUser ? (
+          <>
+            <span className="user-name">{currentUser.username}</span>
+            <button onClick={handleLogout}>Cerrar Sesión</button>
+          </>
+        ) : (
+          <Link to="/login">Iniciar Sesión</Link>
+        )}
       </div>
     </header>
   );
