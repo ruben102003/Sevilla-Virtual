@@ -4,7 +4,7 @@
   }
   
   .actividad-detalle img {
-    width: 100%;
+    width: 50%;
     height: auto;
     margin: 20px 0;
   }
@@ -12,5 +12,27 @@
   .actividad-detalle p {
     font-size: 1.2em;
     line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 15px;
+  }
+  
+  .actividad-detalle h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .actividad-detalle ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  
+  .actividad-detalle li {
+    background: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
   }
   
