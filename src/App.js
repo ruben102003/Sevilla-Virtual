@@ -8,7 +8,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import ActividadDetalle from './components/ActividadDetalle'; // Importa el componente ActividadDetalle
+import ActividadDetalle from './components/ActividadDetalle'; 
 import './App.css';
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
         <Route path="/alojamiento" element={<Alojamiento />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/actividad/:id" element={<ActividadDetalle />} /> {/* Ruta para ActividadDetalle con un parámetro de ID */}
+        <Route path="/actividad/:id" element={<ActividadDetalle />} /> 
       </Routes>
       </main>
       <Footer />
