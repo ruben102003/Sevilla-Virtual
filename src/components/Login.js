@@ -3,7 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import './Login.css';
 
 function Login() {
-  const [identifier, setIdentifier] = useState(''); // Puede ser un correo electrónico o un nombre de usuario
+  const [identifier, setIdentifier] = useState(''); 
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate();
@@ -11,10 +11,10 @@ function Login() {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    // Obtener los usuarios del localStorage
+    
     const users = JSON.parse(localStorage.getItem('users')) || [];
 
-    // Verificar si el usuario existe
+ 
     const user = users.find(user => 
       (user.email === identifier || user.username === identifier) && user.password === password
     );
@@ -29,10 +29,10 @@ function Login() {
       return;
     }
 
-    // Guardar el usuario en sesión
+ 
     localStorage.setItem('currentUser', JSON.stringify(user));
 
-    // Redirigir a la página de inicio
+ 
     navigate('/');
   };
 

@@ -28,7 +28,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        &copy; 2024 Sevilla Virtual. Todos los derechos reservados.
+        &copy; Rubén Navarro del Castillo 2024 Sevilla Virtual. Todos los derechos reservados.
       </div>
     </footer>
   );

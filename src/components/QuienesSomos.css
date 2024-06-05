@@ -4,21 +4,21 @@
     align-items: center;
     text-align: center;
     padding: 20px;
-    background-image: url('/src/components/img/background.jpeg'); /* Ruta de la imagen de fondo */
+    background-image: url('/src/components/img/background.jpeg'); 
     background-size: cover;
     background-position: center;
-    min-height: calc(100vh - 140px); /* Ajusta según la altura del header y footer */
+    min-height: calc(100vh - 140px); 
   }
   
   .column-container {
     display: flex;
-    justify-content: space-between; /* Distribuye el espacio entre las columnas */
-    width: 100%; /* Asegura que las columnas ocupen todo el ancho del contenedor */
+    justify-content: space-between; 
+    width: 100%;
   }
   
   .section {
-    width: calc(50% - 10px); /* Establece el ancho de cada columna con un margen entre ellas */
-    background-color: rgba(255, 255, 255, 0.9); /* Color de fondo con transparencia para que el texto sea legible */
+    width: calc(50% - 10px); 
+    background-color: rgba(255, 255, 255, 0.9); 
     padding: 20px;
   }
   

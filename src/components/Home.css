@@ -4,16 +4,16 @@ body, main {
   }
   
   .hero {
-    background-image: url('/src/components/img/sevilla-mas.jpeg'); /* Ruta de la imagen de fondo */
+    background-image: url('/src/components/img/sevilla-mas.jpeg'); 
     background-size: cover;
     background-position: center;
-    min-height: 100vh; /* Ajusta según la altura deseada */
+    min-height: 100vh; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white; /* Color del texto para contrastar con la imagen de fondo */
+    color: white; 
   }
   
   .hero h1 {

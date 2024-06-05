@@ -14,28 +14,28 @@ function Register() {
   const handleRegister = (e) => {
     e.preventDefault();
 
-    // Validar que la contraseña tenga números, letras y al menos una mayúscula
+    
     const passwordRegex = /^(?=.*[A-Z])(?=.*\d).{6,}$/;
     if (!passwordRegex.test(password)) {
       setError('La contraseña debe tener al menos una mayúscula, una letra y un número.');
       return;
     }
 
-    // Obtener los usuarios del localStorage
+  
     const users = JSON.parse(localStorage.getItem('users')) || [];
 
-    // Verificar si el correo o el nombre de usuario ya están registrados
+   
     const userExists = users.some(user => user.email === email || user.username === username);
     if (userExists) {
       setError('El correo electrónico o el nombre de usuario ya están registrados.');
       return;
     }
 
-    // Guardar el nuevo usuario
+   
     users.push({ firstName, lastName, email, username, password });
     localStorage.setItem('users', JSON.stringify(users));
 
-    // Redirigir a la página de inicio de sesión
+   
     navigate('/login');
   };
 
